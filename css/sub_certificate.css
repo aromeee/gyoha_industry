@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+#main .inner { margin: 0 auto; width: 1200px; }
+#main .contents { padding-top: 150px; } 
+
+.mb {background: url(../images/sub/cer_mv.jpg) no-repeat center -360px; background-size: cover; width: 100%; height: 600px;}
+
+.certificate {position:relative; padding-top:70px; border-top:2px solid #eaeaea; margin-top:108px;}
+.certificate.type1 {padding-top:0; border-top:0; margin-top:0}
+.certificate h4 {font-size:30px; margin:-10px 0 10px 0; }
+.certificate p {line-height:32px; color:#333; margin-bottom:35px}
+.certificate dl dt {font-size:24px; color:#333; margin-top:16px;}
+.certificate dl dt:first-child {margin-top:0}
+.certificate dl dd {line-height:32px;}
+
+.certificate .img {position:absolute; text-align:center}
+.certificate .img img {max-width:100%; display:block; margin-bottom:20px; width: 500px;}
+.certificate.type2 .img {top:60px; right:5%;}
+.certificate.type1 .img {top:-120px; left:5%;}
+.certificate.type1 .text-area {padding-left:38%; box-sizing:border-box }
+
+.certificate .btw {display:inline-block; min-width:131px; height:40px; box-sizing:border-box; font-size:14px; color:#333; line-height:40px; border:1px solid #333;text-align:center } 
+
+
+
+@media all and (max-width:1279px) {
+	.certificate {margin-left:50px; margin-right:50px}
+	.certificate h4 {padding:0; }
+	.certificate.type2 .text-area {padding-right:38%; box-sizing:border-box}
+	.text-area br {display:none}
+	.certificate.type2 .img img, .certificate.type1 .img img {margin: 0 auto 20px;}
+	.certificate.type2 .img {top: 70px;}
+	.certificate.type1 .img {top: 10px;}
+	.certificate.type1 .text-area {margin-left:0; width:100%;}/* 날짜 수정 */
+	.certificate.type2 .img {right:0;}
+	.certificate.type1 .img {left:0;}/* 날짜 수정 */
+}
+
+
+@media all and (max-width:980px) {
+	.certificate.type1 .text-area {width:100%;}/* 날짜 수정 */
+}
+
+@media all and (max-width:920px) {
+	 .certificate.type1 .text-area {padding-left: 50%;}
+	.certificate.type2 .text-area {padding-right:45%}
+}
+
+@media all and (max-width:767px) {
+
+	.certificate {margin-left:15px; margin-right:15px; padding-top:0; margin-top: 70px; border-top:0}
+	.certificate .img  {position:relative; top:0 !important; left:0; margin:40px auto 0; text-align:center}
+	.certificate .img img {width:auto !important; margin:0 auto}
+	.certificate .img a {display:none}
+	.certificate dl {width:100%; }
+	.certificate.type1 dl {padding-left:0}/* 날짜 수정 */
+	.certificate h4 {font-size:23px; margin-bottom:17px}
+	.certificate p {font-size:16px; line-height:26px; color:#333;}
+	.certificate dl dt {font-size:20px; margin-top:27px;}
+	.certificate dl dt:first-child {margin-top:0}
+	.certificate dl dd {font-size:16px; line-height:26px;}
+
+	.certificate .text-area {width:100%;}
+	.certificate.type1 .text-area {padding-left: 0; width: 100%;}
+	.certificate.type2 .text-area {padding-right:0; width:100%; }
+}

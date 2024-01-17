@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+
+
+/* mv */
+#wrap {overflow: hidden;}
+#main section {margin: 150px 0;}
+#mv {position: relative;}
+#mv > div ul {height: 850px;}
+#mv > div ul li {width: 100%;}
+#mv > div ul li img {display: block; width: 100%;}
+#mv .mv_txt {position: absolute; left: 90px; bottom: 95px; color: #fff; line-height: 1.4; z-index: 50;}
+#mv .mv_txt .ko {font-weight: 400; font-size: 3rem; letter-spacing: -0.2rem;}
+#mv .mv_txt .en {font-family: DM Serif Display, serif; font-weight: 300; letter-spacing: 2px; font-size: 10rem; text-align: left;}
+
+/* common */
+section p {font-size: 2.8rem; position: relative; color: #0070c0;}
+section p::before {content: '―'; display: block; position: absolute; top: 28px; left: 18px; transform: rotate(45deg);}
+section h2 {padding: 15px 0 0 35px; font-size: 5rem; letter-spacing: -1px;}
+section h3 {padding-left: 32px; font-size: 1.6rem; color: #666; font-weight: 400; letter-spacing: -1px;}
+
+/* growth */
+#growth {margin-bottom: 0 !important;}
+#growth .inner {position: relative; padding: 50px 0;}
+#growth .menu_txt {position: absolute; left: 0; top: 0; z-index: 10;}
+#growth .graph {width: 100%; background: url('../images/main/graph_bg.jpg') no-repeat center; background-size: cover; margin: 80px 0 100px 0;}
+#growth .graph ul {display: flex; justify-content: center; align-items: flex-end; gap: 100px; padding: 50px;}
+#growth .graph ul li {width: 100px;}
+#growth .graph ul li:last-child {width: 130px;}
+#growth .graph ul li img {width: 100%;}
+
+#growth .counting .count {font-size: 5rem;}
+#growth .counting .inner {display: flex; justify-content: space-between; gap: 50px; max-width: calc(100% - 800px)}
+#growth .counting dl {width: calc((100% - 100px) / 3); text-align: center; margin-top: 100px;}
+#growth .counting dl dt {width: 100%;}
+#growth .counting dl dt img {width: 100px;}
+#growth .counting dl dd {font-size: 1.8rem;}
+#growth .counting dl dd:nth-child(3) {font-size: 2.4rem; letter-spacing: -2px; color: #0070c0;}
+#growth .counting dl dd:nth-child(4) {font-size: 1.6rem; letter-spacing: -2px; color: #999;}
+
+/* product */
+#product {position: relative; height: 850px; padding-top: 100px; margin-bottom: 0 !important;
+    /* 가로스크롤 */
+    overscroll-behavior: none; width: 300%; display: flex; flex-wrap: nowrap; --bg-color: #fff; background-color: var(--bg-color);}
+#product .prd_list {position: relative; width: 100%; height: 100%;}
+#product .prd_list:last-child .prd_txt {right: 400px;}
+#product .menu_txt {position: absolute; top: 100px; left: 200px; width: 400px; height: 500px; z-index: 10; padding: 20px; --bg-color: #fff; background-color: var(--bg-color);}
+#product .prd_txt {position: absolute; right: 180px; top: 0; display: flex; gap: 50px; align-items: center;}
+#product .prd_txt img {width: 600px; height: 400px;}
+#product .prd_txt dl {text-align: left; padding-top: 20px;}
+#product .prd_txt dl dt {font-size: 2.4rem;}
+#product .prd_txt dl dd {font-size: 1.8rem; letter-spacing: -1px; font-weight: 300; color: #666;}
+#product .prd_txt dl .more {display: inline-block; border: 1px solid #0070c0; border-radius: 30px; padding: 5px 20px; margin-top: 15px; font-size: 1.4rem; font-weight: 400; transition: all 0.5s;}
+#product .prd_txt dl .more:hover {background: #0070c0; border: transparent;}
+#product .prd_txt dl .more:hover a {color: #fff;}
+
+/* vision */
+#value {height: 100vh; background: url('../images/main/line_bg02.jpg') no-repeat center; background-size: cover; margin-top: 0 !important; padding-top: 150px;}
+#value .vision ul {display: flex; gap: 80px; padding: 50px 90px;}
+#value .vision ul li {width: calc((100% - 180px) / 4); border-radius: 30px; overflow: hidden;}
+#value .vision ul li img {width: 100%;}
+#value .vision ul li dl {background: #fff; text-align: center; padding: 30px 0; letter-spacing: -1px;}
+#value .vision ul li dl dt {font-size: 2.4rem; font-weight: 500;}
+#value .vision ul li dl dd {font-size: 1.8rem; font-weight: 300;}
+
+/* map */
+#map .menu_txt {margin-left: 80px;}
+#map .inner {display: flex; gap: 80px; justify-content: center; padding-top: 50px; letter-spacing: -1px; font-weight: 300;}
+#map .map_tit {display: flex; gap: 20px; font-size: 3rem; padding-top: 30px; cursor: pointer;}
+#map .map_tit li {border-left: 3px solid transparent; transition: all 0.5s; padding: 0 20px;}
+#map .map_tit li.on {border-left: 3px solid #0070c0; font-weight: 600;}
+#map .map_add {position: relative; padding-top: 50px; font-size: 2.2rem;}
+#map .map_add li {position: absolute; left: 0; top: 30px;}

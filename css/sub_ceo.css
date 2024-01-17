@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+
+
+#main{ width: 1200px; margin: 0 auto; margin-top: 100px; overflow-x: hidden;height: 1600px;}
+/* #main .sec_1{display: flex; } */
+#main .ceo_bg{width: 100%; padding-bottom: 80px; position: relative;}
+#main .ceo_bg dl{position: absolute; top: 40%;left: 100px;/*  width: 900px; height: 200px; */}
+#main .ceo_bg dl dt{font-size: 6rem; color: #fff; font-weight: 700; text-shadow: 2px 2px 2px #000;}
+
+#main .sec_1 h2{font-size: 4rem; text-align: center; }
+#main .sec_1 > p{ font-size: 1.6rem; color: #999; text-align: center; padding: 10px 0;}
+
+#main .sec_2{width: 1200px; height: 700px; margin: 0 auto; z-index: 9;   background: #eee; }
+#main .sec_2 .ceo_txt{font-size: 1.8rem; line-height: 2.2; padding-left: 200px;  padding-top: 50px;}
+#main .ceo_top{display: flex; padding-top: 50px;}
+
+#main .ceo_top .ceo_left{width: 500px; height: 400px; position: relative;}
+
+#main .ceo_top .ceo_left img{width: 100%; position: absolute; top: 0; left: 0; z-index: 1;}
+#main .ceo_top .ceo_rigth{width: 800px; height: 550px; background:linear-gradient(#0070c0,#395bf5); position: absolute; top: 950px; left: 800px; }
+#main .ceo_top .ceo_rigth::before{content: ''; width: 100%; height: 1px; background: #fff; display: block; position: absolute; top: 150px; left: 0;}
+#main .ceo_top .ceo_rigth dl{font-size: 3rem; line-height: 1.5; font-weight: 700; color: #fff; letter-spacing: -2px;}
+#main .ceo_top .ceo_rigth p{font-size: 1.6rem; font-weight: 400; color: #fff;position: relative;}
+
+#main .ceo{text-align: right; position: absolute; bottom: 30px; right: 100px;}
+#main .ceo h3{font-size: 2.3rem;text-align: right; line-height: 1;}
+
